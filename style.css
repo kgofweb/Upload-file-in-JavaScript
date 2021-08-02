@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #4834d4;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 380px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: .5rem;
+}
+
+.container header {
+  color: #6990f2;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px 0;
+  height: 167px;
+  border-radius: 5px;
+  border: 2px dashed #6990f2;
+  cursor: pointer;
+}
+
+form :where(i, p) {
+  color: #6990f2;
+}
+
+form i {
+  font-size: 50px;
+}
+
+form p {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+section .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e9f0ff;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+section .row i {
+  font-size: 30px;
+  color: #6990f2;
+}
+
+section .details span {
+  font-size: 14px;
+}
+
+/* ========= Progress Area ========= */
+.progress-area .row .content {
+  width: 100%;
+  margin-left: 15px;
+}
+
+.progress-area .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.progress-area .progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #fff;
+  margin-bottom: 4px;
+  border-radius: 50px;
+}
+
+.progress-bar .progress {
+  width: 10%;
+  height: 100%;
+  background: #6990f2;
+  border-radius: inherit;
+}
+
+/* ========= Upload Area ========= */
+.upload-area {
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
+.upload-area::-webkit-scrollbar {
+  width: 0px;
+}
+
+.upload-area .row .content {
+  display: flex;
+  align-items: center;
+}
+
+.upload-area .row .details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.upload-area .details .size {
+  color: #4834d4;
+}
+
+.upload-area .uil-check {
+  font-size: 25px;
+  color: #6990f2;
+}
